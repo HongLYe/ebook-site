@@ -15,18 +15,18 @@ function renderBooks(list){
       <p>${b.author}</p>
       <div class="card-actions">
         <a href="${b.file}" download>Download</a>
-        <a href="viewer.html?file=${encodeURIComponent(b.file)}" target="_blank">Read</a>
+        <a href="https://mozilla.github.io/pdf.js/web/viewer.html?file=${encodeURIComponent(window.location.origin + '/' + b.file)}" target="_blank">Read</a>
       </div>
     </article>
   `).join('');
 }
 
-document.getElementById('search').addEventListener('input', e=>{
+document.getElementById('search').addEventListener('input', e => {
   const q = e.target.value.toLowerCase();
   renderBooks(books.filter(b =>
     b.title.toLowerCase().includes(q) ||
     b.author.toLowerCase().includes(q) ||
-    (b.tags || []).some(t => t.includes(q))
+    (b.tags || []).some(t => t.toLowerCase().includes(q))
   ));
 });
 
