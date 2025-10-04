@@ -13,7 +13,7 @@ Download PDF files
 Read books directly in the browser using the built-in PDF viewer
 
 🗂️ Project Structure
-text
+```
 my-ebook-library/
 ├── index.html          # Main application page
 ├── viewer.html         # PDF viewer page
@@ -30,6 +30,7 @@ my-ebook-library/
     ├── កម្រងតែងសេចក្តី.pdf
     ├── វិញ្ញាសា12.pdf
     └── សំណួរ_ចម្លើយ_ប្រវត្តិត្រៀមប្រឡងបាក់ឌុប_2014_2019_1.pdf
+```
 🚀 Features
 Responsive Design: Works on desktop and mobile devices
 
@@ -94,4 +95,5 @@ json
 This project can be deployed on any static web hosting service (GitHub Pages, Netlify, Vercel, etc.) since it consists entirely of static files.
 
 📄 License
+
 This project is provided as-is for educational and personal use.
