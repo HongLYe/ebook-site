@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin Upload - eBook Library</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <style>
+    /* small admin-specific styles so it looks fine even without changes */
+    .admin-wrap{max-width:740px;margin:36px auto;padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,.08);background:#fff}
+    label{display:block;margin:12px 0 6px;font-weight:600}
+    input[type=text], input[type=password], input[type=file]{width:100%;padding:10px;border-radius:6px;border:1px solid #ddd}
+    button{margin-top:12px;padding:10px 14px;border-radius:8px;border:none;cursor:pointer}
+    .hidden{display:none}
+    .msg{margin-top:12px}
+  </style>
+</head>
+<body>
+  <div class="admin-wrap">
+    <h2>Admin Upload</h2>
+
+    <div id="loginBox">
+      <label>Username</label>
+      <input id="username" type="text" placeholder="admin">
+      <label>Password</label>
+      <input id="password" type="password" placeholder="password">
+      <button id="loginBtn">Login</button>
+      <p style="font-size:0.9em;color:#666;margin-top:10px">Note: this login uses credentials stored on the server (Vercel env vars). Don't share them.</p>
+    </div>
+
+    <div id="uploadBox" class="hidden">
+      <label>Book Title</label>
+      <input id="title" type="text" placeholder="Book title (required)">
+      <label>Author (optional)</label>
+      <input id="author" type="text" placeholder="Author name">
+      <label>PDF File</label>
+      <input id="pdffile" type="file" accept="application/pdf">
+      <small style="display:block;margin-top:6px;color:#666">After upload, you can add a cover manually to /covers/ and update the books.json entry later.</small>
+      <button id="uploadBtn">Upload PDF</button>
+      <button id="logoutBtn" style="margin-left:8px;background:#f2f2f2">Logout</button>
+      <p class="msg" id="status"></p>
+    </div>
+  </div>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>
