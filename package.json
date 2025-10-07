@@ -1,6 +1,7 @@
 {
   "name": "my-ebook-library",
   "version": "1.0.0",
+  "type": "module",
   "dependencies": {
     "formidable": "^3.5.1"
   }
