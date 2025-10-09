@@ -9,7 +9,8 @@ function show(msg, ok = true) {
 
 // === YOUR ADMIN TOKEN HERE ===
 // Generate it using the Node script or from ChatGPT instructions earlier
-const ADMIN_TOKEN = "<paste_your_generated_admin_token_here>"; 
+const ADMIN_TOKEN = "eyJpYXQiOjE3NjAwMTI5MjI3ODB9.9a98a18f53cef8b47e9c1344d89c344ecae2627e9da1c74e3b53af0c68d36e25";
+ 
 
 // Upload handler
 document.getElementById('uploadBtn').addEventListener('click', async () => {
