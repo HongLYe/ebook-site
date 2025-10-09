@@ -9,7 +9,7 @@ function show(msg, ok = true) {
 
 // === YOUR ADMIN TOKEN HERE ===
 // Generate it using the Node script or from ChatGPT instructions earlier
-const ADMIN_TOKEN = "eyJpYXQiOjE3NjAwMTI5MjI3ODB9.9a98a18f53cef8b47e9c1344d89c344ecae2627e9da1c74e3b53af0c68d36e25";
+const ADMIN_TOKEN = "eyJpYXQiOjE3NjAwMTM2ODgzMzh9.986262caa68f9532883bbf559c00afebaf6c177952d4881fa5e241fed9f8afca";
  
 
 // Upload handler
