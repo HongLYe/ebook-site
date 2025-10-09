@@ -6,7 +6,7 @@ export default async function handler(req, res){
   try{
     const { user, pass } = req.body;
     const ADMIN_USER = process.env.ADMIN_USERNAME || 'admin';
-    const secret = process.env.ADMIN_SECRET || 'very-secret-change-me';
+    const secret = process.env.ADMIN_SECRET || 'changeme';
     if(user === ADMIN_USER && pass === ADMIN_PASS){
       // create a basic token (random) and sign it by keeping it short-lived in memory is not possible across serverless invocations
       // Instead we create a *signed* token using simple HMAC with SECRET so server can validate without state
